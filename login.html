@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Event Management</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        background: linear-gradient(to bottom, #000, #111827);
+      }
+    </style>
+  </head>
+
+  <body class="min-h-screen flex items-center justify-center">
+    <!-- Login Card -->
+    <div class="bg-black text-white rounded-lg shadow-lg p-8 w-full max-w-md">
+      <!-- Title -->
+      <h1
+        class="text-yellow-500 text-3xl font-bold text-center mb-6 animate-pulse"
+      >
+        Welcome Back!
+      </h1>
+      <p class="text-gray-400 text-center mb-8">
+        Login to access your event dashboard.
+      </p>
+
+      <!-- Login Form -->
+      <form action="index.html" method="GET">
+        <!-- Email Field -->
+        <div class="mb-4">
+          <label for="email" class="block text-sm font-medium mb-2">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            class="w-full px-4 py-2 bg-gray-800 text-gray-300 rounded-lg border border-gray-600 focus:outline-none focus:border-yellow-500 focus:ring-1 focus:ring-yellow-500"
+            required
+          />
+        </div>
+
+        <!-- Password Field -->
+        <div class="mb-6">
+          <label for="password" class="block text-sm font-medium mb-2"
+            >Password</label
+          >
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your password"
+            class="w-full px-4 py-2 bg-gray-800 text-gray-300 rounded-lg border border-gray-600 focus:outline-none focus:border-yellow-500 focus:ring-1 focus:ring-yellow-500"
+            required
+          />
+        </div>
+
+        <!-- Remember Me & Forgot Password -->
+        <div class="flex items-center justify-between mb-6">
+          <label class="flex items-center text-gray-400">
+            <input
+              type="checkbox"
+              class="mr-2 focus:ring-yellow-500"
+            />
+            Remember Me
+          </label>
+          <a href="#" class="text-yellow-500 text-sm hover:underline">
+            Forgot Password?
+          </a>
+        </div>
+
+        <!-- Login Button -->
+        <button
+          type="submit"
+          class="w-full bg-yellow-500 hover:bg-yellow-400 text-black font-semibold py-2 rounded-lg shadow-md transition duration-300"
+        >
+          Login
+        </button>
+      </form>
+
+      <!-- Divider -->
+      <div class="mt-6 text-center text-gray-500 text-sm">OR</div>
+
+      <!-- Sign Up Link -->
+      <p class="mt-4 text-center">
+        Don’t have an account?
+        <a href="#" class="text-yellow-500 font-medium hover:underline">
+          Sign up
+        </a>
+      </p>
+    </div>
+  </body>
+</html>

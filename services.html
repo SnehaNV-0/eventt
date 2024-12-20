@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+ 
+  
+</head>
+ <!-- Navbar -->
+ <nav class="bg-black shadow-md">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-between items-center py-4">
+        <!-- Logo -->
+        <a href="index.html" class="text-2xl font-bold text-yellow-400">Enchanted</a>
+  
+        <!-- Menu Toggle (Mobile) -->
+        <button 
+          id="menu-toggle" 
+          class="text-gray-600 hover:text-blue-600 focus:outline-none md:hidden"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </button>
+  
+        <!-- Menu Items -->
+        <div id="menu" class="hidden md:flex space-x-6">
+          <a href="index.html" class="text-white hover:text-yellow-400 transition">Home</a>
+          <a href="about.html" class="text-white hover:text-yellow-400  transition">About</a>
+          <a href="services.html" class="text-white hover:text-yellow-400  transition">Services</a>
+          <a href="getintouch.html" class="text-white hover:text-yellow-400 transition">Contact Us</a>
+        </div>
+      </div>
+  
+      <!-- Dropdown Menu (Mobile) -->
+      <div id="dropdown-menu" class="hidden flex-col md:hidden space-y-2 bg-gray-50 rounded-md shadow-md px-4 py-2">
+        <a href="index.html" class="block text-gray-600 hover:text-blue-600 transition">Home</a>
+        <a href="about.html" class="block text-gray-600 hover:text-blue-600 transition">About</a>
+        <a href="services.html" class="block text-gray-600 hover:text-blue-600 transition">Services</a>
+        <a href="getintouch.html" class="block text-gray-600 hover:text-blue-600 transition">Contact</a>
+      </div>
+    </div>
+  </nav>
+  
+  
+  
+  <script>
+    // Navbar toggle functionality
+    const menuToggle = document.getElementById('menu-toggle');
+    const dropdownMenu = document.getElementById('dropdown-menu');
+  
+    menuToggle.addEventListener('click', () => {
+      dropdownMenu.classList.toggle('hidden');
+      dropdownMenu.classList.toggle('flex');
+    });
+  </script>
+  
+  
+<body class="bg-gray-50 text-gray-900 overflow-x-hidden">
+
+  <!-- Hero Section -->
+  <header class="relative bg-black text-white overflow-hidden">
+    <div class="container mx-auto px-6 py-20 text-center">
+      <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Professional Event <span class="text-yellow-400">Management Services</span> </h1>
+      <p class="text-lg md:text-xl mb-8">Bringing your dream events to life with creativity and precision.</p>
+      <a href="#services" class="px-6 py-3 bg-yellow-400 text-black font-semibold rounded-full hover:bg-gray-100 transition">Explore Our Services</a>
+    </div>
+  </header>
+  
+<!-- Services -->
+<section id="services" class="container mx-auto px-6 py-16">
+    <h2 class="text-4xl font-extrabold text-center text-gray-800 mb-12">Our Services</h2>
+    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+  
+      <!-- Service Card 1 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition">
+        <img src="https://www.hemantevents.com/admin/uploads/product/1714128403zf.jpeg" alt="Wedding Planning" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-bold text-gray-800">Wedding Planning</h3>
+          <p class="mt-2 text-gray-600">From intimate ceremonies to grand celebrations, we specialize in crafting weddings tailored to your dreams. We handle every detail, so you can enjoy your special day stress-free.</p>
+          <ul class="mt-4 text-sm text-gray-600 space-y-2">
+            <li><i class="fa-regular fa-square-check"></i> Venue scouting and reservations</li>
+            <li><i class="fa-regular fa-square-check"></i> Customized décor and floral arrangements</li>
+            <li><i class="fa-regular fa-square-check"></i> Coordination with photographers and videographers</li>
+            <li><i class="fa-regular fa-square-check"></i> Catering and menu planning</li>
+            <li><i class="fa-regular fa-square-check"></i> Pre-wedding and on-day coordination</li>
+          </ul>
+          <a href="" class="mt-6 block text-center bg-yellow-400 text-black py-2 rounded-md hover:bg-yellow-500 transition duration-300">Book Now</a>        </div>
+      </div>
+  
+      <!-- Service Card 2 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition">
+        <img src="https://storage.unitedwebnetwork.com/files/1189/7a7dab9865d31598b26943a1b8083f6d.webp" alt="Corporate Events" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-bold text-gray-800">Corporate Events</h3>
+          <p class="mt-2 text-gray-600">Whether it’s a small team meeting or a large-scale conference, we manage every aspect to ensure your business goals are met with style and precision.</p>
+          <ul class="mt-4 text-sm text-gray-600 space-y-2">
+            <li><i class="fa-regular fa-square-check"></i> Conference and seminar management</li>
+            <li><i class="fa-regular fa-square-check"></i> Product launches and brand promotions</li>
+            <li><i class="fa-regular fa-square-check"></i> Networking and team-building events</li>
+            <li><i class="fa-regular fa-square-check"></i> Audio-visual setups and stage design</li>
+            <li><i class="fa-regular fa-square-check"></i> Post-event reporting and feedback</li>
+          </ul>
+          <a href="" class="mt-11 block text-center bg-yellow-400 text-black py-2 rounded-md hover:bg-yellow-500 transition duration-300">Book Now</a>        </div>
+      </div>
+  
+      <!-- Service Card 3 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition">
+        <img src="https://www.showmakerz.com/event-management/table-decoration-for-corporate-events.webp" alt="Social Celebrations" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-bold text-gray-800">Social Celebrations</h3>
+          <p class="mt-2 text-gray-600">Make every celebration unforgettable with our innovative and tailored event solutions. We bring creativity and excitement to every party!</p>
+          <ul class="mt-4 text-sm text-gray-600 space-y-2">
+            <li><i class="fa-regular fa-square-check"></i> Birthday parties and milestone celebrations</li>
+            <li><i class="fa-regular fa-square-check"></i> Baby showers and gender reveals</li>
+            <li><i class="fa-regular fa-square-check"></i> Themed events and costume parties</li>
+            <li><i class="fa-regular fa-square-check"></i> Entertainment booking (DJs, magicians, etc.)</li>
+            <li><i class="fa-regular fa-square-check"></i> Unique gift and party favors</li>
+          </ul>
+          <a href="" class="mt-16 block text-center bg-yellow-400 text-black py-2 rounded-md hover:bg-yellow-500 transition duration-300">Book Now</a>        </div>
+      </div>
+  
+      <!-- Service Card 4 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition">
+        <img src="https://www.cvent.com/sites/default/files/styles/focus_scale_and_crop_800x450/public/image/2024-07/Resource%20_0.png?h=1b59ed55&itok=j51vUFfz" alt="Exhibitions & Trade Shows" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-bold text-gray-800">Exhibitions & Trade Shows</h3>
+          <p class="mt-2 text-gray-600">Our team ensures that your business stands out in exhibitions and trade shows with eye-catching booths and seamless event logistics.</p>
+          <ul class="mt-4 text-sm text-gray-600 space-y-2">
+            <li><i class="fa-regular fa-square-check"></i> Booth design and construction</li>
+            <li><i class="fa-regular fa-square-check"></i> Promotional material and branding</li>
+            <li><i class="fa-regular fa-square-check"></i> On-site event management</li>
+            <li><i class="fa-regular fa-square-check"></i> Lead generation support</li>
+            <li><i class="fa-regular fa-square-check"></i> Post-event analytics</li>
+          </ul>
+          <a href="" class="mt-6 block text-center bg-yellow-400 text-black py-2 rounded-md hover:bg-yellow-600 transition duration-300">Book Now</a>        </div>
+      </div>
+  
+      <!-- Service Card 5 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition">
+        <img src="https://www.alliedmarketresearch.com/blog/Blog_banner_image/ctoykrzsmv.jpeg" alt="Live Shows & Concerts" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-bold text-gray-800">Live Shows & Concerts</h3>
+          <p class="mt-2 text-gray-600">We bring energy and excitement to live performances, managing everything from sound and lighting to audience engagement.</p>
+          <ul class="mt-4 text-sm text-gray-600 space-y-2">
+            <li><i class="fa-regular fa-square-check"></i> Stage design and setup</li>
+            <li><i class="fa-regular fa-square-check"></i> Lighting and audio engineering</li>
+            <li><i class="fa-regular fa-square-check"></i> Artist and talent booking</li>
+            <li><i class="fa-regular fa-square-check"></i> Ticketing and crowd management</li>
+            <li><i class="fa-regular fa-square-check"></i> Safety and compliance</li>
+          </ul>
+          <a href="" class="mt-6 block text-center bg-yellow-400 text-black py-2 rounded-md hover:bg-yellow-500 transition duration-300">Book Now</a>
+        </div>
+      </div>
+  
+      <!-- Service Card 6 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition">
+        <img src="https://minehead-district-u3a.org.uk/uploads/2024/11/understanding-charitable-activities-definition-and-examples.webp" alt="Charity & Community Events" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-bold text-gray-800">Charity & Community Events</h3>
+          <p class="mt-2 text-gray-600">We help organizations create impactful charity and community events that engage and inspire audiences while achieving fundraising goals.</p>
+          <ul class="mt-4 text-sm text-gray-600 space-y-2">
+            <li><i class="fa-regular fa-square-check"></i> Fundraising campaigns</li>
+            <li><i class="fa-regular fa-square-check"></i> Volunteer coordination</li>
+            <li><i class="fa-regular fa-square-check"></i> Event promotion and publicity</li>
+            <li><i class="fa-regular fa-square-check"></i> Guest speaker and celebrity appearances</li>
+            <li><i class="fa-regular fa-square-check"></i> Impact reporting</li>
+          </ul>
+          <a href="" class="mt-6 block text-center bg-yellow-400 text-black py-2 rounded-md hover:bg-yellow-500 transition duration-300">Book Now</a>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+
+
+  
+  <!-- FAQs Section -->
+  <section id="faqs" class="py-12 bg-gradient-to-b from-gray-50 to-gray-100">
+    <h2 class="text-4xl font-extrabold text-center text-gray-800 mb-12">Frequently Asked Questions</h2>
+    <div class="container mx-auto px-6 space-y-4">
+        <!-- FAQ 1 -->
+        <details class="bg-white shadow-lg rounded-lg p-6 border-l-4 border-yellow-500">
+            <summary class="font-semibold text-lg text-gray-800 cursor-pointer focus:outline-none">
+                How far in advance should we book your services?
+            </summary>
+            <p class="mt-2 text-gray-600">
+                We recommend booking at least 3-6 months in advance to ensure availability and allow ample time for planning.
+            </p>
+        </details>
+
+        <!-- FAQ 2 -->
+        <details class="bg-white shadow-lg rounded-lg p-6 border-l-4 border-yellow-500">
+            <summary class="font-semibold text-lg text-gray-800 cursor-pointer focus:outline-none">
+                Do you handle international events?
+            </summary>
+            <p class="mt-2 text-gray-600">
+                Yes! We are experienced in managing destination weddings, corporate events, and other celebrations globally.
+            </p>
+        </details>
+
+        <!-- FAQ 3 -->
+        <details class="bg-white shadow-lg rounded-lg p-6 border-l-4 border-yellow-500">
+            <summary class="font-semibold text-lg text-gray-800 cursor-pointer focus:outline-none">
+                Can you work within our budget?
+            </summary>
+            <p class="mt-2 text-gray-600">
+                Absolutely. We customize our services to suit your budget while maintaining the quality and excellence we’re known for.
+            </p>
+        </details>
+
+        <!-- FAQ 4 -->
+        <details class="bg-white shadow-lg rounded-lg p-6 border-l-4 border-yellow-500">
+            <summary class="font-semibold text-lg text-gray-800 cursor-pointer focus:outline-none">
+                What sets you apart from other event planners?
+            </summary>
+            <p class="mt-2 text-gray-600">
+                Our attention to detail, creativity, and commitment to delivering personalized experiences make us stand out.
+            </p>
+        </details>
+    </div>
+</section>
+
+
+  
+  
+  <!-- Pricing Section -->
+  <section id="pricing" class="bg-gray-100 py-16 relative">
+    <h2 class="text-4xl font-extrabold text-center text-gray-800 mb-12">Pricing Packages</h2>
+    <div class="container mx-auto flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-8 px-6 relative">
+      
+      <!-- Basic Package -->
+      <div class="bg-white shadow-lg rounded-lg p-8 transform scale-90 hover:scale-100 transition duration-300 ease-in-out">
+        <h3 class="text-2xl font-bold text-gray-800 text-center">Basic</h3>
+        <p class="mt-4 text-gray-600 text-center">Perfect for small, intimate gatherings with essential services.</p>
+        <p class="text-3xl font-bold mt-4 text-yellow-500 text-center">$500</p>
+        <ul class="mt-6 text-sm text-gray-600 space-y-2">
+          <li><i class="fa-regular fa-square-check"></i> Venue selection assistance</li>
+          <li><i class="fa-regular fa-square-check"></i> Standard décor</li>
+          <li><i class="fa-regular fa-square-check"></i> On-day coordination</li>
+          <li><i class="fa-regular fa-square-check"></i> 24/7 support</li>
+        </ul>
+        <a href="" class="mt-6 block text-center bg-yellow-500 text-white py-2 rounded-md hover:bg-yellow-600 transition duration-300">Get Started</a>
+      </div>
+  
+      <!-- Premium Package (Highlighted) -->
+      <div class="bg-yellow-500 text-white shadow-lg rounded-lg p-8 transform scale-100 transition duration-300 ease-in-out">
+        <h3 class="text-2xl font-bold text-center">Premium</h3>
+        <p class="mt-4 text-white-200 text-center">Ideal for larger events requiring more customization and detailed planning.</p>
+        <p class="text-3xl font-bold mt-4 text-white text-center">$1500</p>
+        <ul class="mt-6 text-sm space-y-2">
+          <li><i class="fa-regular fa-square-check"></i> Personalized event design</li>
+          <li><i class="fa-regular fa-square-check"></i> Full-service vendor management</li>
+          <li><i class="fa-regular fa-square-check"></i> On-site event staff</li>
+          <li><i class="fa-regular fa-square-check"></i> Pre- and post-event support</li>
+        </ul>
+        <a href="" class="mt-6 block text-center bg-white text-yellow-500 py-2 rounded-md hover:bg-gray-100 transition duration-300">Get Started</a>
+      </div>
+  
+      <!-- Elite Package -->
+      <div class="bg-white shadow-lg rounded-lg p-8 transform scale-90 hover:scale-100 transition duration-300 ease-in-out">
+        <h3 class="text-2xl font-bold text-gray-800 text-center">Elite</h3>
+        <p class="mt-4 text-gray-600 text-center">For luxurious and large-scale events with premium services.</p>
+        <p class="text-3xl font-bold mt-4 text-yellow-500 text-center">$3000+</p>
+        <ul class="mt-6 text-sm text-gray-600 space-y-2">
+          <li><i class="fa-regular fa-square-check"></i> Bespoke event planning</li>
+          <li><i class="fa-regular fa-square-check"></i> VIP guest coordination</li>
+          <li><i class="fa-regular fa-square-check"></i> Advanced lighting and décor</li>
+          <li><i class="fa-regular fa-square-check"></i> Dedicated event manager</li>
+        </ul>
+        <a href="" class="mt-6 block text-center bg-yellow-500 text-white py-2 rounded-md hover:bg-yellow-600 transition duration-300">Get Started</a>
+      </div>
+    </div>
+  </section>
+  
+  
+    <!-- Call-to-Action -->
+    <section class="bg-black text-white text-center py-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Let's Create <span class="text-yellow-400">Memorable Moments</span> Together</h2>
+        <p class="text-lg md:text-xl mb-6">Contact us now to make your next event extraordinary.</p>
+        <a href="getintouch.html" class="px-8 py-3 bg-white text-black font-semibold rounded-full hover:bg-yellow-400 transition">Get in Touch</a>
+      </section>
+    
+      <!-- Footer -->
+      <footer class="bg-black text-white py-8">
+        <div class="container mx-auto px-6 lg:px-12">
+          <!-- Footer Content -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Brand Name -->
+            <div>
+              <h1 class="text-yellow-500 text-2xl font-bold mb-4">Enchanted</h1>
+            </div>
+      
+            <!-- Contact Info -->
+            <div>
+              <h2 class="text-white font-semibold text-lg mb-2">CONTACT</h2>
+              <p class="text-gray-400">enchanted@management.com</p>
+              <hr class="border-t border-gray-500 w-1/2 my-2" />
+              <p class="text-gray-400">123 Event Street</p>
+              <p class="text-gray-400">Cityville</p>
+            </div>
+      
+            <!-- Navigation Links -->
+            <div>
+              <ul class="space-y-2">
+                <li>
+                  <a href="index.html" class="hover:text-yellow-400 transition-colors">Home</a>
+                </li>
+                <li>
+                  <a href="about.html" class="hover:text-yellow-400 transition-colors">About</a>
+                </li>
+                <li>
+                  <a href="services.html" class="hover:text-yellow-400 transition-colors">Services</a>
+                </li>
+                <li>
+                  <a href="getintouch.html" class="hover:text-yellow-400 transition-colors">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+      
+          <!-- Footer Bottom -->
+          <div class="mt-8 border-t border-gray-600 pt-4 text-center text-sm text-gray-400">
+            <p>&copy; 2024 Enchanted. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    
+    
+
+    </body>
+    </html>
+  
